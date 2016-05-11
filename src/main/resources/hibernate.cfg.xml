@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/arena</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.tolfel.springrest.entity.DiscussionEntity"/>
+    <mapping class="com.tolfel.springrest.entity.MatchEntity"/>
+    <mapping class="com.tolfel.springrest.entity.MessageEntity"/>
+    <mapping class="com.tolfel.springrest.entity.PaymentSystemEntity"/>
+    <mapping class="com.tolfel.springrest.entity.RateEntity"/>
+    <mapping class="com.tolfel.springrest.entity.RoundEntity"/>
+    <mapping class="com.tolfel.springrest.entity.StageEntity"/>
+    <mapping class="com.tolfel.springrest.entity.StageTypeEntity"/>
+    <mapping class="com.tolfel.springrest.entity.StageUserPositionEntity"/>
+    <mapping class="com.tolfel.springrest.entity.TournamentEntity"/>
+    <mapping class="com.tolfel.springrest.entity.UserEntity"/>
+    <mapping class="com.tolfel.springrest.entity.UserProfileEntity"/>
+    <mapping class="com.tolfel.springrest.entity.UserTournamentEntity"/>
+    <mapping class="com.tolfel.springrest.entity.UserUserProfileEntity"/>
+    <mapping class="com.tolfel.springrest.entity.User"/>
+    <mapping class="com.tolfel.springrest.entity.UserProfile"/>
+    <mapping class="com.tolfel.springrest.entity.Discussion"/>
+    <mapping class="com.tolfel.springrest.entity.Match"/>
+    <mapping class="com.tolfel.springrest.entity.Message"/>
+    <mapping class="com.tolfel.springrest.entity.PaymentSystem"/>
+    <mapping class="com.tolfel.springrest.entity.Rate"/>
+    <mapping class="com.tolfel.springrest.entity.Round"/>
+    <mapping class="com.tolfel.springrest.entity.Stage"/>
+    <mapping class="com.tolfel.springrest.entity.StageType"/>
+    <mapping class="com.tolfel.springrest.entity.StageUserPosition"/>
+    <mapping class="com.tolfel.springrest.entity.Tournament"/>
+    <mapping class="com.tolfel.springrest.entity.UserTournament"/>
+    <mapping class="com.tolfel.springrest.entity.UserUserProfile"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
